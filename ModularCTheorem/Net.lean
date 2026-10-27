@@ -41,6 +41,8 @@ structure CNet (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [Com
   A : Diamond → VonNeumannAlgebra H
   /-- The vacuum vector. -/
   Ω : H
+  /-- The vacuum is a unit vector, so `⟪Ω, (·) Ω⟫` is a state. -/
+  norm_Ω : ‖Ω‖ = 1
   /-- Isotony. -/
   isotony : ∀ D D' : Diamond, D.toSet ⊆ D'.toSet → A D ≤ A D'
   /-- Locality. -/

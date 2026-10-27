@@ -1,9 +1,13 @@
 import Mathlib
 
 /-!
-RealCore.lean. Uncompiled, as requested.
+# Real-variable core of the c-theorem
 
-Step 6 uses midpoint concavity and continuity, followed by an elementary
+From non-negativity, additivity, boost covariance, decrease in `b` and the UV bound of
+`D(a,A;b)`, the potential `F(x) = D(1,e^x;1)` is concave and `C = 6F'(log ab)` exists, is
+non-negative, bounded by the UV constant and non-increasing in `r = √(ab)`.
+
+Concavity uses midpoint concavity and continuity, followed by an elementary
 maximum argument. This avoids discretization and floor/ceiling limits.
 
 The one-sided derivative API was checked against
