@@ -1,0 +1,12 @@
+name = "ModularCTheorem"
+version = "0.1.0"
+defaultTargets = ["ModularCTheorem"]
+
+[[require]]
+name = "QuantumSystem"
+git = "https://github.com/kencyke/quantum-system"
+rev = "7ae25d9a9e7933f4e75e02a8464b0099e64bb5b4"
+
+[[lean_lib]]
+name = "ModularCTheorem"
+leanOptions.autoImplicit = false
